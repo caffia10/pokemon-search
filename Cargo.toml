@@ -1,0 +1,19 @@
+[package]
+name = "pokemon_search"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.7"
+tower = "0.4"                                                          # para middlewares opcionales
+tracing-subscriber = { version = "0.3.14", features = ["env-filter"] }
+scylla = "1.2"
+tokio = { version = "1.12", features = ["full"] }
+futures = "0.3.6"
+uuid = "1.0"
+bigdecimal = "0.4"
+num-bigint = "0.3"
+tracing = "0.1.36"
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
